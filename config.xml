@@ -34,14 +34,16 @@
 </platform>
 <plugin name="cordova-plugin-device" />
 <plugin name="cordova-plugin-splashscreen" />
-<plugin name="cordova-plugin-camera" >
 <plugin name="cordova-plugin-statusbar" />
-<variable name="CAMERA_USAGE_DESCRIPTION" value="Take picture"/>
-<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Take picture"/>
+<plugin name="cordova-plugin-camera" >
+    <variable name="CAMERA_USAGE_DESCRIPTION" value="Take picture"/>
+    <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Take picture"/>
 </plugin>
 <plugin name="cordova-plugin-compat" />
 <plugin name="cordova-plugin-whitelist" />
-<plugin name="phonegap-plugin-barcodescanner" />
+<plugin name="phonegap-plugin-barcodescanner" >  
+    <param name="CAMERA_USAGE_DESCRIPTION" value="To scan barcodes." />  
+</plugin> 
 <platform  name="ios">
     <preference name="StatusBarOverlaysWebView" value="false"/>
     <preference name="StatusBarBackgroundColor" value="#000000"/>
