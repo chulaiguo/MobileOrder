@@ -7,6 +7,7 @@
     <title>Mobile Order</title>
         
     <script src="cordova.js"></script>
+   
 </head>
 
 <body>
