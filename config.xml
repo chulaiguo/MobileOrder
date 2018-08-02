@@ -49,6 +49,9 @@
     <preference name="StatusBarOverlaysWebView" value="false"/>
     <preference name="StatusBarBackgroundColor" value="#000000"/>
     <preference name="StatusBarStyle" value="lightcontent"/>
+	<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+		<string>To scan barcodes</string>
+	</edit-config>
 </platform>
 <platform name="android">
     <icon src="res/icons/android/icon-36-ldpi.png" density="ldpi" />
