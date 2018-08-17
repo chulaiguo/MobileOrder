@@ -7,6 +7,18 @@
     <title>Mobile Order</title>
         
     <script src="cordova.js"></script>
+	<script>
+        function onDeviceReady(){
+            document.addEventListener("backbutton", onBackKeyDown, false); 
+        }
+
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        function onBackKeyDown(e) 
+        {
+           cordovaBack(e);
+        }
+    </script>
 </head>
 
 <body>
