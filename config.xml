@@ -42,6 +42,7 @@
 </plugin>
 <plugin name="cordova-plugin-compat" />
 <plugin name="cordova-plugin-whitelist" />
+<plugin name="cordova-plugin-geolocation" />
 <plugin name="phonegap-plugin-barcodescanner" >  
     <param name="CAMERA_USAGE_DESCRIPTION" value="To scan barcodes." />  
 </plugin> 
@@ -52,6 +53,9 @@
 	<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
 		<string>To scan barcodes</string>
 	</edit-config>
+	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need location access to find local weather</string>
+</edit-config>
 </platform>
 <platform name="android">
     <icon src="res/icons/android/icon-36-ldpi.png" density="ldpi" />
